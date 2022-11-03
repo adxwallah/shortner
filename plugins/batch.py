@@ -118,7 +118,7 @@ async def cancel(c, m):
                             text = message.caption
                             link = await replace_link(text, x="")
                             if link == text:
-                                print("The given link is either excluded domain link or a droplink link")
+                                print("The given link is either excluded domain link or a gyanilinks link")
                             else:
                                 await message.edit_caption(link)
 
@@ -168,7 +168,7 @@ async def cancel(c, m):
                             text = message.caption
                             link = await replace_mdisk_link(text)
                             if link == text:
-                                print("The given link is either excluded domain link or a droplink link")
+                                print("The given link is either excluded domain link or a gyanilinks link")
                             else:
                                 await message.edit_caption(link)
 
@@ -218,7 +218,7 @@ async def cancel(c, m):
                             text = message.caption
                             link = await mdisk_droplink_convertor(text)
                             if link == text:
-                                print("The given link is either excluded domain link or a droplink link")
+                                print("The given link is either excluded domain link or a gyanilinks link")
                             else:
                                 await message.edit_caption(link)
 
